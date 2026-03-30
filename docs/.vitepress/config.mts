@@ -11,26 +11,15 @@ export default defineConfig({
         text: '后端开发',
         items: [
           { text: 'Java 基础', link: '/java-basics/' },
-          { 
-            text: '分布式与中间件', 
-            items: [
-              { text: 'Redis', link: '/redis/' },
-              { text: 'MySQL', link: '/mysql/' },
-              { text: 'Kafka', link: '/kafka/' },
-              { text: '分布式理论', link: '/distributed/' }
-            ]
-          }
+          { text: 'Redis', link: '/redis/' },
+          { text: 'MySQL', link: '/mysql/' },
+          { text: 'Kafka', link: '/kafka/' },
+          { text: '操作系统', link: '/os/' },
+          { text: '分布式理论', link: '/distributed/' },
+          { text: '场景题专栏', link: '/scenarios/' }
         ]
       },
-// 预留 AI Agent 位置
-      {
-        text: 'AI 实验室',
-        items: [
-          { text: 'Agent 开发指南', link: '/agent/' },
-          { text: 'RAG 实战', link: '/rag/' }
-        ]
-      },
-
+      { text: 'AI 实验室', items: [] },
       { text: '关于我', link: '/about' }
     ],
 
@@ -41,7 +30,7 @@ export default defineConfig({
           text: 'Java 基础专栏',
           items: [
             { text: '基础语法', link: '/java-basics/index' },
-            { text: '集合框架', link: '/java-basics/collection' },
+            { text: '集合框架', link: '/java-basics/collection' }
           ]
         }
       ],
@@ -50,7 +39,7 @@ export default defineConfig({
           text: 'Redis 深度解析',
           items: [
             { text: '核心原理', link: '/redis/index' },
-            { text: '数据结构', link: '/redis/data-structures' },
+            { text: '数据结构', link: '/redis/data-structures' }
           ]
         }
       ],
@@ -59,7 +48,7 @@ export default defineConfig({
           text: 'MySQL 详解',
           items: [
             { text: 'MySQL 基础', link: '/mysql/index' },
-            { text: '索引原理', link: '/mysql/indexing' },
+            { text: '索引原理', link: '/mysql/indexing' }
           ]
         }
       ],
@@ -76,6 +65,19 @@ export default defineConfig({
         }
       ]
     },
+// 在 sidebar 里新增这两项
+'/os/': [
+  {
+    text: '操作系统核心',
+    items: [{ text: '入门指南', link: '/os/index' }]
+  }
+],
+'/scenarios/': [
+  {
+    text: '场景题实战',
+    items: [{ text: '场景题汇总', link: '/scenarios/index' }]
+  }
+]
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/handsomeyx/my-interview-king' }
