@@ -23,7 +23,7 @@ export default defineConfig({
       { text: '关于我', link: '/about' }
     ],
 
-    // 侧边栏
+    // 侧边栏（全部修复完毕）
     sidebar: {
       '/java-basics/': [
         {
@@ -34,6 +34,7 @@ export default defineConfig({
           ]
         }
       ],
+
       '/redis/': [
         {
           text: 'Redis 深度解析',
@@ -43,6 +44,7 @@ export default defineConfig({
           ]
         }
       ],
+
       '/mysql/': [
         {
           text: 'MySQL 详解',
@@ -52,32 +54,42 @@ export default defineConfig({
           ]
         }
       ],
+
       '/kafka/': [
         {
           text: 'Kafka 消息队列',
           items: [{ text: '入门指南', link: '/kafka/index' }]
         }
       ],
+
       '/distributed/': [
         {
           text: '分布式核心',
           items: [{ text: '分布式基础', link: '/distributed/index' }]
         }
+      ],
+
+      // 已修复：操作系统侧边栏
+      '/os/': [
+        {
+          text: '操作系统核心',
+          items: [{ text: '入门指南', link: '/os/index' }]
+        }
+      ],
+
+      // 已修复：场景题专栏侧边栏（你要的三层结构）
+      '/scenarios/': [
+        {
+          text: '场景题实战',
+          items: [
+            { text: '概述', link: '/scenarios/index' },
+            { text: '接入与路由层', link: '/scenarios/gateway' },
+            { text: '业务逻辑与处理层', link: '/scenarios/service' },
+            { text: '数据持久化与异步层', link: '/scenarios/storage' }
+          ]
+        }
       ]
     },
-// 在 sidebar 里新增这两项
-'/os/': [
-  {
-    text: '操作系统核心',
-    items: [{ text: '入门指南', link: '/os/index' }]
-  }
-],
-'/scenarios/': [
-  {
-    text: '场景题实战',
-    items: [{ text: '场景题汇总', link: '/scenarios/index' }]
-  }
-]
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/handsomeyx/my-interview-king' }
