@@ -1,0 +1,29 @@
+{
+  "domains": [
+    { "name": "分布式", "color": "#f59e0b" },
+    { "name": "算法", "color": "#38bdf8" },
+    { "name": "Java", "color": "#f472b6" },
+    { "name": "AI Agent", "color": "#a78bfa" }
+  ],
+  "nodes": [
+    { "id": "d-basics", "label": "分布式基础", "domain": "分布式", "link": "/distributed/basics" },
+    { "id": "d-patterns", "label": "设计模式", "domain": "分布式", "link": "/distributed/patterns" },
+    { "id": "d-scenarios", "label": "场景题", "domain": "分布式", "link": "/distributed/scenarios" },
+    { "id": "d-consistency", "label": "一致性", "domain": "分布式", "link": "/distributed/basics#cap理论" },
+    { "id": "d-algo", "label": "算法模式", "domain": "算法", "link": "/algorithm/03-algorithm-patterns/" },
+    { "id": "d-sys", "label": "系统算法", "domain": "算法", "link": "/algorithm/04-system-algorithms/" },
+    { "id": "d-conc", "label": "并发工具", "domain": "Java", "link": "/java/concurrent/" },
+    { "id": "d-redis", "label": "Redis 缓存", "domain": "Java", "link": "/java/redis/" },
+    { "id": "d-mcp", "label": "MCP 协议", "domain": "AI Agent", "link": "/ai/03-mcp/" }
+  ],
+  "edges": [
+    { "from": "d-basics", "to": "d-consistency", "label": "CAP" },
+    { "from": "d-sys", "to": "d-basics", "label": "一致性哈希" },
+    { "from": "d-sys", "to": "d-patterns", "label": "分布式ID" },
+    { "from": "d-algo", "to": "d-scenarios", "label": "BFS/DFS" },
+    { "from": "d-conc", "to": "d-consistency", "label": "同步原语" },
+    { "from": "d-redis", "to": "d-basics", "label": "缓存一致性" },
+    { "from": "d-consistency", "to": "d-mcp", "label": "Agent 调度" },
+    { "from": "d-sys", "to": "d-redis", "label": "LRU/LFU" }
+  ]
+}

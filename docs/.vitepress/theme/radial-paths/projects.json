@@ -1,0 +1,91 @@
+{
+  "root": {
+    "label": "项目实战",
+    "color": "#34d399",
+    "description": "智能面试助手项目开发"
+  },
+  "children": [
+    {
+      "id": "pstage1",
+      "label": "环境搭建",
+      "color": "#38bdf8",
+      "children": [
+        {
+          "id": "p1",
+          "label": "开发环境",
+          "color": "#38bdf8",
+          "link": "/projects/01-setup/",
+          "children": [
+            { "id": "p1-1", "label": "项目结构", "link": "/projects/01-setup/#结构", "color": "#38bdf8" },
+            { "id": "p1-2", "label": "依赖配置", "link": "/projects/01-setup/#依赖", "color": "#38bdf8" }
+          ]
+        },
+        {
+          "id": "p2",
+          "label": "基础框架",
+          "color": "#38bdf8",
+          "link": "/projects/01-setup/#框架",
+          "children": [
+            { "id": "p2-1", "label": "Spring Boot", "link": "/projects/01-setup/#spring", "color": "#38bdf8" },
+            { "id": "p2-2", "label": "数据库设计", "link": "/projects/01-setup/#数据库", "color": "#38bdf8" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pstage2",
+      "label": "核心开发",
+      "color": "#34d399",
+      "children": [
+        {
+          "id": "p3",
+          "label": "Agent 集成",
+          "color": "#34d399",
+          "link": "/projects/02-agent/",
+          "children": [
+            { "id": "p3-1", "label": "LLM 对接", "link": "/projects/02-agent/#llm", "color": "#34d399" },
+            { "id": "p3-2", "label": "Prompt 模板", "link": "/projects/02-agent/#prompt", "color": "#34d399" },
+            { "id": "p3-3", "label": "会话管理", "link": "/projects/02-agent/#会话", "color": "#34d399" }
+          ]
+        },
+        {
+          "id": "p4",
+          "label": "MCP 集成",
+          "color": "#34d399",
+          "link": "/projects/03-mcp/",
+          "children": [
+            { "id": "p4-1", "label": "Tool 开发", "link": "/projects/03-mcp/#tool", "color": "#34d399" },
+            { "id": "p4-2", "label": "Server 搭建", "link": "/projects/03-mcp/#server", "color": "#34d399" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pstage3",
+      "label": "功能扩展",
+      "color": "#f59e0b",
+      "children": [
+        {
+          "id": "p5",
+          "label": "Skill 开发",
+          "color": "#f59e0b",
+          "link": "/projects/04-skill/",
+          "children": [
+            { "id": "p5-1", "label": "Skill 编排", "link": "/projects/04-skill/#编排", "color": "#f59e0b" },
+            { "id": "p5-2", "label": "执行引擎", "link": "/projects/04-skill/#执行", "color": "#f59e0b" }
+          ]
+        },
+        {
+          "id": "p6",
+          "label": "部署上线",
+          "color": "#f59e0b",
+          "link": "/projects/05-deploy/",
+          "children": [
+            { "id": "p6-1", "label": "容器化", "link": "/projects/05-deploy/#docker", "color": "#f59e0b" },
+            { "id": "p6-2", "label": "监控告警", "link": "/projects/05-deploy/#监控", "color": "#f59e0b" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "root": {
+    "label": "分布式",
+    "color": "#f59e0b",
+    "description": "分布式系统设计知识体系"
+  },
+  "children": [
+    {
+      "id": "dstage1",
+      "label": "理论线",
+      "color": "#38bdf8",
+      "children": [
+        {
+          "id": "t1",
+          "label": "CAP/BASE",
+          "color": "#38bdf8",
+          "link": "/distributed/basics#cap",
+          "children": [
+            { "id": "t1-1", "label": "CAP 理论", "link": "/distributed/basics#cap", "color": "#38bdf8" },
+            { "id": "t1-2", "label": "BASE 理论", "link": "/distributed/basics#base", "color": "#38bdf8" },
+            { "id": "t1-3", "label": "一致性模型", "link": "/distributed/basics#一致性", "color": "#38bdf8" }
+          ]
+        },
+        {
+          "id": "t2",
+          "label": "一致性哈希",
+          "color": "#38bdf8",
+          "link": "/distributed/basics#一致性哈希",
+          "children": [
+            { "id": "t2-1", "label": "哈希环", "link": "/distributed/basics#哈希环", "color": "#38bdf8" },
+            { "id": "t2-2", "label": "虚拟节点", "link": "/distributed/basics#虚拟节点", "color": "#38bdf8" }
+          ]
+        },
+        {
+          "id": "t3",
+          "label": "共识算法",
+          "color": "#38bdf8",
+          "link": "/distributed/basics#raft",
+          "children": [
+            { "id": "t3-1", "label": "Paxos", "link": "/distributed/basics#paxos", "color": "#38bdf8" },
+            { "id": "t3-2", "label": "Raft", "link": "/distributed/basics#raft", "color": "#38bdf8" },
+            { "id": "t3-3", "label": "ZAB", "link": "/distributed/basics#zab", "color": "#38bdf8" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dstage2",
+      "label": "场景线",
+      "color": "#34d399",
+      "children": [
+        {
+          "id": "g1",
+          "label": "API 网关",
+          "color": "#34d399",
+          "link": "/distributed/scenarios/gateway",
+          "children": [
+            { "id": "g1-1", "label": "路由转发", "link": "/distributed/scenarios/gateway#路由", "color": "#34d399" },
+            { "id": "g1-2", "label": "限流熔断", "link": "/distributed/scenarios/gateway#限流熔断", "color": "#34d399" }
+          ]
+        },
+        {
+          "id": "g2",
+          "label": "数据持久化",
+          "color": "#34d399",
+          "link": "/distributed/scenarios/storage",
+          "children": [
+            { "id": "g2-1", "label": "分库分表", "link": "/distributed/scenarios/storage#分库分表", "color": "#34d399" },
+            { "id": "g2-2", "label": "消息队列", "link": "/distributed/scenarios/storage#消息队列", "color": "#34d399" }
+          ]
+        },
+        {
+          "id": "g3",
+          "label": "业务逻辑层",
+          "color": "#34d399",
+          "link": "/distributed/scenarios/business",
+          "children": [
+            { "id": "g3-1", "label": "分布式 ID", "link": "/distributed/scenarios/business#分布式id", "color": "#34d399" },
+            { "id": "g3-2", "label": "分布式锁", "link": "/distributed/scenarios/business#分布式锁", "color": "#34d399" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dstage3",
+      "label": "综合能力",
+      "color": "#f59e0b",
+      "children": [
+        {
+          "id": "c1",
+          "label": "限流熔断",
+          "color": "#f59e0b",
+          "link": "/distributed/scenarios/gateway#限流熔断",
+          "children": [
+            { "id": "c1-1", "label": "令牌桶", "link": "/distributed/scenarios/gateway#令牌桶", "color": "#f59e0b" },
+            { "id": "c1-2", "label": "漏桶算法", "link": "/distributed/scenarios/gateway#漏桶", "color": "#f59e0b" },
+            { "id": "c1-3", "label": "滑动窗口", "link": "/distributed/scenarios/gateway#滑动窗口", "color": "#f59e0b" }
+          ]
+        },
+        {
+          "id": "c2",
+          "label": "消息队列",
+          "color": "#f59e0b",
+          "link": "/distributed/scenarios/storage#消息队列",
+          "children": [
+            { "id": "c2-1", "label": "Kafka", "link": "/distributed/scenarios/storage#kafka", "color": "#f59e0b" },
+            { "id": "c2-2", "label": "RocketMQ", "link": "/distributed/scenarios/storage#rocketmq", "color": "#f59e0b" }
+          ]
+        },
+        {
+          "id": "c3",
+          "label": "分布式 ID",
+          "color": "#f59e0b",
+          "link": "/distributed/scenarios/business#分布式id",
+          "children": [
+            { "id": "c3-1", "label": "雪花算法", "link": "/distributed/scenarios/business#雪花", "color": "#f59e0b" },
+            { "id": "c3-2", "label": "号段模式", "link": "/distributed/scenarios/business#号段", "color": "#f59e0b" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "domains": [
+    { "name": "项目实战", "color": "#34d399" },
+    { "name": "AI Agent", "color": "#a78bfa" },
+    { "name": "Java", "color": "#f472b6" },
+    { "name": "分布式", "color": "#f59e0b" }
+  ],
+  "nodes": [
+    { "id": "p-setup", "label": "环境搭建", "domain": "项目实战", "link": "/projects/01-setup/" },
+    { "id": "p-agent", "label": "Agent 基础", "domain": "项目实战", "link": "/projects/02-agent/" },
+    { "id": "p-mcp", "label": "MCP 集成", "domain": "项目实战", "link": "/projects/03-mcp/" },
+    { "id": "p-skill", "label": "Skill 开发", "domain": "项目实战", "link": "/projects/04-skill/" },
+    { "id": "ai-fund", "label": "LLM 基础", "domain": "AI Agent", "link": "/ai/01-llm-fundamentals/" },
+    { "id": "ai-engine", "label": "工程模式", "domain": "AI Agent", "link": "/ai/02-agent-patterns/" },
+    { "id": "ai-mcp", "label": "MCP 协议", "domain": "AI Agent", "link": "/ai/03-mcp/" },
+    { "id": "java-spr", "label": "Spring", "domain": "Java", "link": "/java/spring/" },
+    { "id": "dist-base", "label": "分布式基础", "domain": "分布式", "link": "/distributed/basics" }
+  ],
+  "edges": [
+    { "from": "p-setup", "to": "java-spr", "label": "Spring Boot" },
+    { "from": "p-agent", "to": "ai-engine", "label": "ReAct/CoT" },
+    { "from": "p-mcp", "to": "ai-mcp", "label": "MCP 协议" },
+    { "from": "p-skill", "to": "ai-fund", "label": "Prompt 工程" },
+    { "from": "p-skill", "to": "ai-engine", "label": "Skill 编排" },
+    { "from": "p-mcp", "to": "dist-base", "label": "服务发现" },
+    { "from": "ai-fund", "to": "ai-engine", "label": "Tokenizer" },
+    { "from": "p-agent", "to": "ai-fund", "label": "LLM 调用" }
+  ]
+}

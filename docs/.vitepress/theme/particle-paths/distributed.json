@@ -1,0 +1,43 @@
+{
+  "stages": [
+    {
+      "name": "理论线：理解本质",
+      "color": "#38bdf8",
+      "nodes": [
+        { "id": "t1", "label": "🏛️ CAP/BASE", "link": "/distributed/basics" },
+        { "id": "t2", "label": "🔗 一致性哈希", "link": "/distributed/basics#一致性哈希" },
+        { "id": "t3", "label": "🤝 共识算法 Raft", "link": "/distributed/basics#raft" }
+      ]
+    },
+    {
+      "name": "场景线：怎么落地",
+      "color": "#34d399",
+      "nodes": [
+        { "id": "g1", "label": "🚪 API 网关", "link": "/distributed/scenarios/gateway" },
+        { "id": "g2", "label": "💾 数据持久化", "link": "/distributed/scenarios/storage" },
+        { "id": "g3", "label": "⚙️ 业务逻辑层", "link": "/distributed/scenarios/business" }
+      ]
+    },
+    {
+      "name": "综合能力",
+      "color": "#f59e0b",
+      "nodes": [
+        { "id": "c1", "label": "🚧 限流熔断", "link": "/distributed/scenarios/gateway#限流熔断" },
+        { "id": "c2", "label": "📨 消息队列", "link": "/distributed/scenarios/storage#消息队列" },
+        { "id": "c3", "label": "🆔 分布式 ID", "link": "/distributed/scenarios/business#分布式id" }
+      ]
+    }
+  ],
+  "edges": [
+    { "from": "t1", "to": "t2" },
+    { "from": "t2", "to": "t3" },
+    { "from": "t1", "to": "g1" },
+    { "from": "t2", "to": "g1" },
+    { "from": "t3", "to": "g2" },
+    { "from": "g1", "to": "g2" },
+    { "from": "g2", "to": "g3" },
+    { "from": "g1", "to": "c1" },
+    { "from": "g2", "to": "c2" },
+    { "from": "g3", "to": "c3" }
+  ]
+}

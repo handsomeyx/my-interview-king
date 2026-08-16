@@ -1,0 +1,35 @@
+{
+  "stages": [
+    {
+      "name": "第一阶段：打基础",
+      "color": "#38bdf8",
+      "nodes": [
+        { "id": "a1", "label": "📐 算法方法论", "link": "/algorithm/00-algorithm-frameworks/" },
+        { "id": "a2", "label": "🏗️ 数据结构基础", "link": "/algorithm/02-data-structures/" }
+      ]
+    },
+    {
+      "name": "第二阶段：练套路",
+      "color": "#34d399",
+      "nodes": [
+        { "id": "b1", "label": "🧩 算法模式", "link": "/algorithm/03-algorithm-patterns/" },
+        { "id": "b2", "label": "⚙️ 系统算法", "link": "/algorithm/04-system-algorithms/" }
+      ]
+    },
+    {
+      "name": "第三阶段：刷真题",
+      "color": "#f59e0b",
+      "nodes": [
+        { "id": "c1", "label": "🎯 高频真题", "link": "/algorithm/05-top-interview-100/" },
+        { "id": "c2", "label": "🎤 模拟面试", "link": "/algorithm/06-practice/" }
+      ]
+    }
+  ],
+  "edges": [
+    { "from": "a1", "to": "a2" },
+    { "from": "a2", "to": "b1" },
+    { "from": "b1", "to": "b2" },
+    { "from": "b2", "to": "c1" },
+    { "from": "c1", "to": "c2" }
+  ]
+}

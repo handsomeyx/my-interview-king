@@ -1,0 +1,28 @@
+{
+  "domains": [
+    { "name": "Java", "color": "#f472b6" },
+    { "name": "算法", "color": "#38bdf8" },
+    { "name": "分布式", "color": "#f59e0b" }
+  ],
+  "nodes": [
+    { "id": "j-conc", "label": "并发工具", "domain": "Java", "link": "/java/concurrent/" },
+    { "id": "j-jvm", "label": "JVM 内存模型", "domain": "Java", "link": "/java/jvm/" },
+    { "id": "j-mysql", "label": "MySQL 索引", "domain": "Java", "link": "/java/mysql/" },
+    { "id": "j-redis", "label": "Redis 缓存", "domain": "Java", "link": "/java/redis/" },
+    { "id": "j-kafka", "label": "Kafka", "domain": "Java", "link": "/java/kafka/" },
+    { "id": "jvm-algo", "label": "算法模式", "domain": "算法", "link": "/algorithm/03-algorithm-patterns/" },
+    { "id": "sys-algo", "label": "系统算法", "domain": "算法", "link": "/algorithm/04-system-algorithms/" },
+    { "id": "dist-hash", "label": "一致性哈希", "domain": "分布式", "link": "/distributed/basics" },
+    { "id": "dist-limit", "label": "限流熔断", "domain": "分布式", "link": "/distributed/scenarios/gateway" }
+  ],
+  "edges": [
+    { "from": "j-conc", "to": "j-jvm", "label": "volatile" },
+    { "from": "jvm-algo", "to": "j-mysql", "label": "二叉搜索" },
+    { "from": "sys-algo", "to": "j-redis", "label": "LRU/LFU" },
+    { "from": "sys-algo", "to": "dist-hash", "label": "一致性哈希" },
+    { "from": "sys-algo", "to": "dist-limit", "label": "令牌桶" },
+    { "from": "jvm-algo", "to": "j-kafka", "label": "BFS/DFS" },
+    { "from": "j-redis", "to": "dist-hash", "label": "缓存一致性" },
+    { "from": "j-jvm", "to": "jvm-algo", "label": "GC 调优" }
+  ]
+}

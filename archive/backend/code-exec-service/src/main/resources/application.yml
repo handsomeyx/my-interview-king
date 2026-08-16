@@ -1,0 +1,15 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: code-exec-service
+
+app:
+  local:
+    timeout-seconds: 5    # 运行 wall-time 上限
+    memory-mb: 256        # -Xmx 上限
+
+logging:
+  level:
+    com.ikm: INFO

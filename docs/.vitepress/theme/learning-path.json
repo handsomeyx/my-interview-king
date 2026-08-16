@@ -1,0 +1,32 @@
+{
+  "stages": [
+    {
+      "name": "基础阶段",
+      "nodes": [
+        { "title": "Java 基础", "path": "/java/basics/" },
+        { "title": "集合框架", "path": "/java/basics/collection" },
+        { "title": "算法框架", "path": "/algorithm/00-algorithm-frameworks/" },
+        { "title": "数据结构", "path": "/algorithm/02-data-structures/" }
+      ]
+    },
+    {
+      "name": "进阶阶段",
+      "nodes": [
+        { "title": "Redis", "path": "/java/redis/" },
+        { "title": "MySQL", "path": "/java/mysql/" },
+        { "title": "Kafka", "path": "/java/kafka/" },
+        { "title": "分布式理论", "path": "/distributed/" },
+        { "title": "场景题", "path": "/distributed/scenarios/" }
+      ]
+    },
+    {
+      "name": "高级阶段",
+      "nodes": [
+        { "title": "系统算法", "path": "/algorithm/04-system-algorithms/" },
+        { "title": "面试 Top 100", "path": "/algorithm/05-top-interview-100/" },
+        { "title": "AI Agent", "path": "/ai/" },
+        { "title": "工程落地", "path": "/ai/05-engineering/" }
+      ]
+    }
+  ]
+}

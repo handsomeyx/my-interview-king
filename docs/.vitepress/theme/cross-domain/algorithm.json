@@ -1,0 +1,30 @@
+{
+  "domains": [
+    { "name": "算法", "color": "#38bdf8" },
+    { "name": "Java", "color": "#f472b6" },
+    { "name": "分布式", "color": "#f59e0b" },
+    { "name": "AI Agent", "color": "#a78bfa" }
+  ],
+  "nodes": [
+    { "id": "algo-pattern", "label": "算法模式", "domain": "算法", "link": "/algorithm/03-algorithm-patterns/" },
+    { "id": "sys-algo", "label": "系统算法", "domain": "算法", "link": "/algorithm/04-system-algorithms/" },
+    { "id": "jvm", "label": "JVM 内存模型", "domain": "Java", "link": "/java/jvm/" },
+    { "id": "java-conc", "label": "并发工具", "domain": "Java", "link": "/java/concurrent/" },
+    { "id": "mysql", "label": "MySQL 索引", "domain": "Java", "link": "/java/mysql/" },
+    { "id": "cons-hash", "label": "一致性哈希", "domain": "分布式", "link": "/distributed/basics" },
+    { "id": "rate-limit", "label": "限流熔断", "domain": "分布式", "link": "/distributed/scenarios/gateway" },
+    { "id": "mq", "label": "消息队列", "domain": "分布式", "link": "/java/kafka/" },
+    { "id": "mcp", "label": "MCP 协议", "domain": "AI Agent", "link": "/ai/03-mcp/" },
+    { "id": "rag", "label": "RAG 检索", "domain": "AI Agent", "link": "/ai/04-rag/" }
+  ],
+  "edges": [
+    { "from": "algo-pattern", "to": "mysql", "label": "二叉搜索" },
+    { "from": "algo-pattern", "to": "mq", "label": "BFS/DFS" },
+    { "from": "sys-algo", "to": "java-conc", "label": "LRU 缓存" },
+    { "from": "sys-algo", "to": "cons-hash", "label": "一致性哈希" },
+    { "from": "sys-algo", "to": "rate-limit", "label": "分布式ID" },
+    { "from": "jvm", "to": "java-conc", "label": "volatile" },
+    { "from": "sys-algo", "to": "rag", "label": "检索算法" },
+    { "from": "algo-pattern", "to": "mcp", "label": "图算法" }
+  ]
+}

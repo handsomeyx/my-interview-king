@@ -1,0 +1,39 @@
+# VitePress build cache & output (any location)
+**/.vitepress/cache/
+**/.vitepress/dist/
+
+# Node dependencies
+node_modules/
+
+# npm cache (local)
+.npm-cache/
+
+# Build output (frontend app)
+frontend-interview-agent/dist/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Dev database (auto-created by backend/server.py init_db)
+*.db
+
+# Local pre-refactor backup
+docs.backup-20260811/
+
+# Claude Code local config & skills (per-user); keep project rules tracked
+.claude/*
+!.claude/rules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Secrets & local env (commit.md 硬红线:绝不提交)
+.env
+.env.*
+!.env.example

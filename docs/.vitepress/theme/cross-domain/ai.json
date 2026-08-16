@@ -1,0 +1,28 @@
+{
+  "domains": [
+    { "name": "AI Agent", "color": "#a78bfa" },
+    { "name": "算法", "color": "#38bdf8" },
+    { "name": "Java", "color": "#f472b6" },
+    { "name": "分布式", "color": "#f59e0b" }
+  ],
+  "nodes": [
+    { "id": "ai-fund", "label": "LLM 基础", "domain": "AI Agent", "link": "/ai/01-llm-fundamentals/" },
+    { "id": "ai-engine", "label": "工程模式", "domain": "AI Agent", "link": "/ai/02-agent-patterns/" },
+    { "id": "ai-mcp", "label": "MCP 协议", "domain": "AI Agent", "link": "/ai/03-mcp/" },
+    { "id": "ai-rag", "label": "RAG 检索", "domain": "AI Agent", "link": "/ai/04-rag/" },
+    { "id": "ai-algo", "label": "算法模式", "domain": "算法", "link": "/algorithm/03-algorithm-patterns/" },
+    { "id": "ai-sys", "label": "系统算法", "domain": "算法", "link": "/algorithm/04-system-algorithms/" },
+    { "id": "ai-conc", "label": "并发工具", "domain": "Java", "link": "/java/concurrent/" },
+    { "id": "ai-dist", "label": "分布式基础", "domain": "分布式", "link": "/distributed/basics" }
+  ],
+  "edges": [
+    { "from": "ai-fund", "to": "ai-engine", "label": "Tokenizer" },
+    { "from": "ai-engine", "to": "ai-mcp", "label": "Function Call" },
+    { "from": "ai-sys", "to": "ai-rag", "label": "检索算法" },
+    { "from": "ai-algo", "to": "ai-mcp", "label": "图算法" },
+    { "from": "ai-rag", "to": "ai-fund", "label": "Embedding" },
+    { "from": "ai-conc", "to": "ai-engine", "label": "并发执行" },
+    { "from": "ai-dist", "to": "ai-mcp", "label": "Agent 调度" },
+    { "from": "ai-fund", "to": "ai-algo", "label": "动态规划" }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "root": {
+    "label": "算法",
+    "color": "#38bdf8",
+    "description": "算法与数据结构知识体系"
+  },
+  "children": [
+    {
+      "id": "stage1",
+      "label": "打基础",
+      "color": "#38bdf8",
+      "description": "建立算法思维和数据结构直觉",
+      "children": [
+        {
+          "id": "a1",
+          "label": "算法方法论",
+          "color": "#38bdf8",
+          "link": "/algorithm/00-algorithm-frameworks/",
+          "description": "分治、动态规划、贪心等核心思想",
+          "children": [
+            { "id": "a1-1", "label": "分治策略", "link": "/algorithm/00-algorithm-frameworks/#分治策略", "color": "#38bdf8" },
+            { "id": "a1-2", "label": "动态规划", "link": "/algorithm/00-algorithm-frameworks/#动态规划", "color": "#38bdf8" },
+            { "id": "a1-3", "label": "贪心策略", "link": "/algorithm/00-algorithm-frameworks/#贪心策略", "color": "#38bdf8" },
+            { "id": "a1-4", "label": "回溯算法", "link": "/algorithm/00-algorithm-frameworks/#回溯", "color": "#38bdf8" }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "数据结构基础",
+          "color": "#38bdf8",
+          "link": "/algorithm/02-data-structures/",
+          "description": "数组、链表、树、图等基础结构",
+          "children": [
+            { "id": "a2-1", "label": "数组与链表", "link": "/algorithm/02-data-structures/#数组", "color": "#38bdf8" },
+            { "id": "a2-2", "label": "栈与队列", "link": "/algorithm/02-data-structures/#栈与队列", "color": "#38bdf8" },
+            { "id": "a2-3", "label": "二叉树", "link": "/algorithm/02-data-structures/#二叉树", "color": "#38bdf8" },
+            { "id": "a2-4", "label": "哈希表", "link": "/algorithm/02-data-structures/#哈希表", "color": "#38bdf8" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stage2",
+      "label": "练套路",
+      "color": "#34d399",
+      "description": "掌握高频算法模式和系统级算法",
+      "children": [
+        {
+          "id": "b1",
+          "label": "算法模式",
+          "color": "#34d399",
+          "link": "/algorithm/03-algorithm-patterns/",
+          "description": "双指针、滑动窗口、BFS/DFS 等",
+          "children": [
+            { "id": "b1-1", "label": "双指针", "link": "/algorithm/03-algorithm-patterns/#双指针", "color": "#34d399" },
+            { "id": "b1-2", "label": "滑动窗口", "link": "/algorithm/03-algorithm-patterns/#滑动窗口", "color": "#34d399" },
+            { "id": "b1-3", "label": "BFS/DFS", "link": "/algorithm/03-algorithm-patterns/#bfs-dfs", "color": "#34d399" },
+            { "id": "b1-4", "label": "二分查找", "link": "/algorithm/03-algorithm-patterns/#二分查找", "color": "#34d399" }
+          ]
+        },
+        {
+          "id": "b2",
+          "label": "系统算法",
+          "color": "#34d399",
+          "link": "/algorithm/04-system-algorithms/",
+          "description": "LRU、限流、一致性哈希等",
+          "children": [
+            { "id": "b2-1", "label": "LRU/LFU 缓存", "link": "/algorithm/04-system-algorithms/#lru", "color": "#34d399" },
+            { "id": "b2-2", "label": "限流算法", "link": "/algorithm/04-system-algorithms/#限流", "color": "#34d399" },
+            { "id": "b2-3", "label": "一致性哈希", "link": "/algorithm/04-system-algorithms/#一致性哈希", "color": "#34d399" },
+            { "id": "b2-4", "label": "分布式 ID", "link": "/algorithm/04-system-algorithms/#分布式id", "color": "#34d399" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stage3",
+      "label": "刷真题",
+      "color": "#f59e0b",
+      "description": "高频面试题实战与模拟面试",
+      "children": [
+        {
+          "id": "c1",
+          "label": "高频真题",
+          "color": "#f59e0b",
+          "link": "/algorithm/05-top-interview-100/",
+          "description": "Top 100 高频面试题",
+          "children": [
+            { "id": "c1-1", "label": "数组/字符串", "link": "/algorithm/05-top-interview-100/#数组", "color": "#f59e0b" },
+            { "id": "c1-2", "label": "链表", "link": "/algorithm/05-top-interview-100/#链表", "color": "#f59e0b" },
+            { "id": "c1-3", "label": "树与图", "link": "/algorithm/05-top-interview-100/#树", "color": "#f59e0b" },
+            { "id": "c1-4", "label": "动态规划", "link": "/algorithm/05-top-interview-100/#动态规划", "color": "#f59e0b" }
+          ]
+        },
+        {
+          "id": "c2",
+          "label": "模拟面试",
+          "color": "#f59e0b",
+          "link": "/algorithm/06-practice/",
+          "description": "真实面试场景模拟",
+          "children": [
+            { "id": "c2-1", "label": "实时编码", "link": "/algorithm/06-practice/#编码", "color": "#f59e0b" },
+            { "id": "c2-2", "label": "系统设计", "link": "/algorithm/06-practice/#系统设计", "color": "#f59e0b" }
+          ]
+        }
+      ]
+    }
+  ]
+}

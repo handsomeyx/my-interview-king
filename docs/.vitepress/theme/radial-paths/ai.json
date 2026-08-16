@@ -1,0 +1,93 @@
+{
+  "root": {
+    "label": "AI Agent",
+    "color": "#a78bfa",
+    "description": "AI Agent 工程实战知识体系"
+  },
+  "children": [
+    {
+      "id": "astage1",
+      "label": "基础入门",
+      "color": "#38bdf8",
+      "children": [
+        {
+          "id": "ai1",
+          "label": "LLM 基础",
+          "color": "#38bdf8",
+          "link": "/ai/01-llm-fundamentals/",
+          "children": [
+            { "id": "ai1-1", "label": "Transformer", "link": "/ai/01-llm-fundamentals/#transformer", "color": "#38bdf8" },
+            { "id": "ai1-2", "label": "Tokenizer", "link": "/ai/01-llm-fundamentals/#tokenizer", "color": "#38bdf8" },
+            { "id": "ai1-3", "label": "Prompt 工程", "link": "/ai/01-llm-fundamentals/#prompt", "color": "#38bdf8" }
+          ]
+        },
+        {
+          "id": "ai2",
+          "label": "Agent 核心",
+          "color": "#38bdf8",
+          "link": "/ai/02-agent-patterns/",
+          "children": [
+            { "id": "ai2-1", "label": "ReAct", "link": "/ai/02-agent-patterns/#react", "color": "#38bdf8" },
+            { "id": "ai2-2", "label": "Chain-of-Thought", "link": "/ai/02-agent-patterns/#cot", "color": "#38bdf8" },
+            { "id": "ai2-3", "label": "Function Call", "link": "/ai/02-agent-patterns/#function", "color": "#38bdf8" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "astage2",
+      "label": "进阶开发",
+      "color": "#34d399",
+      "children": [
+        {
+          "id": "ai3",
+          "label": "MCP 协议",
+          "color": "#34d399",
+          "link": "/ai/03-mcp/",
+          "children": [
+            { "id": "ai3-1", "label": "Server/Client", "link": "/ai/03-mcp/#server", "color": "#34d399" },
+            { "id": "ai3-2", "label": "Tool 注册", "link": "/ai/03-mcp/#tool", "color": "#34d399" }
+          ]
+        },
+        {
+          "id": "ai4",
+          "label": "RAG 检索",
+          "color": "#34d399",
+          "link": "/ai/04-rag/",
+          "children": [
+            { "id": "ai4-1", "label": "Embedding", "link": "/ai/04-rag/#embedding", "color": "#34d399" },
+            { "id": "ai4-2", "label": "向量数据库", "link": "/ai/04-rag/#向量库", "color": "#34d399" },
+            { "id": "ai4-3", "label": "检索增强", "link": "/ai/04-rag/#增强", "color": "#34d399" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "astage3",
+      "label": "工程落地",
+      "color": "#f59e0b",
+      "children": [
+        {
+          "id": "ai5",
+          "label": "多 Agent",
+          "color": "#f59e0b",
+          "link": "/ai/05-multi-agent/",
+          "children": [
+            { "id": "ai5-1", "label": "编排模式", "link": "/ai/05-multi-agent/#编排", "color": "#f59e0b" },
+            { "id": "ai5-2", "label": "协作通信", "link": "/ai/05-multi-agent/#通信", "color": "#f59e0b" }
+          ]
+        },
+        {
+          "id": "ai6",
+          "label": "工程化",
+          "color": "#f59e0b",
+          "link": "/ai/06-engineering/",
+          "children": [
+            { "id": "ai6-1", "label": "性能优化", "link": "/ai/06-engineering/#优化", "color": "#f59e0b" },
+            { "id": "ai6-2", "label": "成本控制", "link": "/ai/06-engineering/#成本", "color": "#f59e0b" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "stages": [
+    {
+      "name": "第一阶段：打基础",
+      "color": "#38bdf8",
+      "nodes": [
+        { "id": "j1", "label": "📘 Java 基础", "link": "/java/basics/" },
+        { "id": "j2", "label": "🧵 Java 并发", "link": "/java/concurrent/" },
+        { "id": "j3", "label": "🗄️ JVM", "link": "/java/jvm/" }
+      ]
+    },
+    {
+      "name": "第二阶段：掌握框架",
+      "color": "#34d399",
+      "nodes": [
+        { "id": "s1", "label": "🍃 Spring IoC/AOP", "link": "/java/spring/" },
+        { "id": "s2", "label": "💾 Spring 事务", "link": "/java/spring/transaction" },
+        { "id": "s3", "label": "📦 MyBatis", "link": "/java/mybatis/" }
+      ]
+    },
+    {
+      "name": "第三阶段：深入底层",
+      "color": "#f59e0b",
+      "nodes": [
+        { "id": "d1", "label": "🐬 MySQL", "link": "/java/mysql/" },
+        { "id": "d2", "label": "🔴 Redis", "link": "/java/redis/" },
+        { "id": "d3", "label": "📨 Kafka", "link": "/java/kafka/" }
+      ]
+    }
+  ],
+  "edges": [
+    { "from": "j1", "to": "j2" },
+    { "from": "j2", "to": "j3" },
+    { "from": "j3", "to": "s1" },
+    { "from": "s1", "to": "s2" },
+    { "from": "s1", "to": "s3" },
+    { "from": "s2", "to": "d1" },
+    { "from": "s3", "to": "d1" },
+    { "from": "d1", "to": "d2" },
+    { "from": "d2", "to": "d3" }
+  ]
+}

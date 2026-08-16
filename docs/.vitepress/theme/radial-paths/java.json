@@ -1,0 +1,126 @@
+{
+  "root": {
+    "label": "Java",
+    "color": "#f472b6",
+    "description": "Java 后端开发知识体系"
+  },
+  "children": [
+    {
+      "id": "jstage1",
+      "label": "打基础",
+      "color": "#38bdf8",
+      "children": [
+        {
+          "id": "j1",
+          "label": "Java 基础",
+          "color": "#38bdf8",
+          "link": "/java/basics/",
+          "children": [
+            { "id": "j1-1", "label": "集合框架", "link": "/java/basics/#集合", "color": "#38bdf8" },
+            { "id": "j1-2", "label": "IO/NIO", "link": "/java/basics/#nio", "color": "#38bdf8" },
+            { "id": "j1-3", "label": "泛型与反射", "link": "/java/basics/#泛型", "color": "#38bdf8" }
+          ]
+        },
+        {
+          "id": "j2",
+          "label": "Java 并发",
+          "color": "#38bdf8",
+          "link": "/java/concurrent/",
+          "children": [
+            { "id": "j2-1", "label": "synchronized", "link": "/java/concurrent/#synchronized", "color": "#38bdf8" },
+            { "id": "j2-2", "label": "volatile", "link": "/java/concurrent/#volatile", "color": "#38bdf8" },
+            { "id": "j2-3", "label": "线程池", "link": "/java/concurrent/#线程池", "color": "#38bdf8" },
+            { "id": "j2-4", "label": "AQS", "link": "/java/concurrent/#aqs", "color": "#38bdf8" }
+          ]
+        },
+        {
+          "id": "j3",
+          "label": "JVM",
+          "color": "#38bdf8",
+          "link": "/java/jvm/",
+          "children": [
+            { "id": "j3-1", "label": "内存模型", "link": "/java/jvm/#内存模型", "color": "#38bdf8" },
+            { "id": "j3-2", "label": "GC 算法", "link": "/java/jvm/#gc", "color": "#38bdf8" },
+            { "id": "j3-3", "label": "类加载", "link": "/java/jvm/#类加载", "color": "#38bdf8" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jstage2",
+      "label": "掌握框架",
+      "color": "#34d399",
+      "children": [
+        {
+          "id": "s1",
+          "label": "Spring IoC/AOP",
+          "color": "#34d399",
+          "link": "/java/spring/",
+          "children": [
+            { "id": "s1-1", "label": "Bean 生命周期", "link": "/java/spring/#bean", "color": "#34d399" },
+            { "id": "s1-2", "label": "循环依赖", "link": "/java/spring/#循环依赖", "color": "#34d399" }
+          ]
+        },
+        {
+          "id": "s2",
+          "label": "Spring 事务",
+          "color": "#34d399",
+          "link": "/java/spring/transaction",
+          "children": [
+            { "id": "s2-1", "label": "传播行为", "link": "/java/spring/transaction/#传播", "color": "#34d399" },
+            { "id": "s2-2", "label": "隔离级别", "link": "/java/spring/transaction/#隔离", "color": "#34d399" }
+          ]
+        },
+        {
+          "id": "s3",
+          "label": "MyBatis",
+          "color": "#34d399",
+          "link": "/java/mybatis/",
+          "children": [
+            { "id": "s3-1", "label": "动态代理", "link": "/java/mybatis/#代理", "color": "#34d399" },
+            { "id": "s3-2", "label": "SQL 映射", "link": "/java/mybatis/#映射", "color": "#34d399" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jstage3",
+      "label": "深入底层",
+      "color": "#f59e0b",
+      "children": [
+        {
+          "id": "d1",
+          "label": "MySQL",
+          "color": "#f59e0b",
+          "link": "/java/mysql/",
+          "children": [
+            { "id": "d1-1", "label": "索引原理", "link": "/java/mysql/#索引", "color": "#f59e0b" },
+            { "id": "d1-2", "label": "事务隔离", "link": "/java/mysql/#事务", "color": "#f59e0b" },
+            { "id": "d1-3", "label": "锁机制", "link": "/java/mysql/#锁", "color": "#f59e0b" }
+          ]
+        },
+        {
+          "id": "d2",
+          "label": "Redis",
+          "color": "#f59e0b",
+          "link": "/java/redis/",
+          "children": [
+            { "id": "d2-1", "label": "数据结构", "link": "/java/redis/#数据结构", "color": "#f59e0b" },
+            { "id": "d2-2", "label": "持久化", "link": "/java/redis/#持久化", "color": "#f59e0b" },
+            { "id": "d2-3", "label": "集群方案", "link": "/java/redis/#集群", "color": "#f59e0b" }
+          ]
+        },
+        {
+          "id": "d3",
+          "label": "Kafka",
+          "color": "#f59e0b",
+          "link": "/java/kafka/",
+          "children": [
+            { "id": "d3-1", "label": "消息存储", "link": "/java/kafka/#存储", "color": "#f59e0b" },
+            { "id": "d3-2", "label": "消费模型", "link": "/java/kafka/#消费", "color": "#f59e0b" }
+          ]
+        }
+      ]
+    }
+  ]
+}

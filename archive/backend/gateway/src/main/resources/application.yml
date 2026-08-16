@@ -1,0 +1,50 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: gateway
+  data:
+    redis:
+      host: redis
+      port: 6379
+      timeout: 2000
+  cloud:
+    nacos:
+      discovery:
+        server-addr: nacos:8848
+    gateway:
+      discovery:
+        locator:
+          enabled: false
+      routes:
+        - id: code-exec-run
+          uri: lb://code-exec-service
+          predicates:
+            - Path=/api/run/**
+          filters:
+            - name: RequestRateLimiter
+              args:
+                # 令牌桶：每秒补 1 个令牌（持续 60/分钟），桶上限 30（允许突发 30 次）
+                redis-rate-limiter.replenishRate: 1
+                redis-rate-limiter.burstCapacity: 30
+                redis-rate-limiter.requestedTokens: 1
+                key-resolver: "#{@ipKeyResolver}"
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowed-origins:
+              - http://localhost:5173
+            allowed-methods: [GET, POST, PUT, DELETE, OPTIONS]
+            allowed-headers: [Content-Type, Authorization]
+            allow-credentials: true
+            max-age: 3600
+
+app:
+  auth:
+    enabled: false   # 阶段1 放行；阶段2 置 true 接入 JWT
+
+logging:
+  level:
+    org.springframework.cloud.gateway: INFO
+    com.ikm: INFO

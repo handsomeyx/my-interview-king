@@ -1,0 +1,41 @@
+{
+  "stages": [
+    {
+      "name": "第一阶段：入门",
+      "color": "#38bdf8",
+      "nodes": [
+        { "id": "ai1", "label": "🧠 LLM 基础", "link": "/ai/01-llm/" },
+        { "id": "ai2", "label": "🤖 Agent 核心", "link": "/ai/02-agent/" }
+      ]
+    },
+    {
+      "name": "第二阶段：进阶",
+      "color": "#34d399",
+      "nodes": [
+        { "id": "ai3", "label": "🔧 工具使用", "link": "/ai/02-agent/tool-use" },
+        { "id": "ai4", "label": "📋 记忆与规划", "link": "/ai/02-agent/memory-project" },
+        { "id": "ai5", "label": "🔌 MCP 协议", "link": "/ai/03-mcp/" }
+      ]
+    },
+    {
+      "name": "第三阶段：高级",
+      "color": "#f59e0b",
+      "nodes": [
+        { "id": "ai6", "label": "💾 RAG 检索", "link": "/ai/04-rag/" },
+        { "id": "ai7", "label": "👥 多 Agent 协作", "link": "/ai/02-agent/multi-agent" },
+        { "id": "ai8", "label": "🏗️ 工程化落地", "link": "/ai/05-engineering/" }
+      ]
+    }
+  ],
+  "edges": [
+    { "from": "ai1", "to": "ai2" },
+    { "from": "ai2", "to": "ai3" },
+    { "from": "ai3", "to": "ai4" },
+    { "from": "ai4", "to": "ai5" },
+    { "from": "ai5", "to": "ai6" },
+    { "from": "ai5", "to": "ai7" },
+    { "from": "ai6", "to": "ai7" },
+    { "from": "ai7", "to": "ai8" },
+    { "from": "ai6", "to": "ai8" }
+  ]
+}
